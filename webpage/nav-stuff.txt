@@ -1,0 +1,62 @@
+css
+
+#aboutme {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    }
+
+#contact {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#projects {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#blog {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+  
+
+
+ nav a {
+    text-decoration: none;
+    
+} 
+
+nav a:hover {
+    text-decoration: none;
+    background: #E90387;
+    transition: 0.3s;
+}  
+
+HTML
+
+<div class="main-nav">
+            <a href="#aboutme">
+                <i div id="aboutme"></i>
+                <img src="webpage/aboutme.jpg" />
+            </a>
+            <a href="contact">
+                <i div id="contact"></i>
+                <img src="webpage/contact.jpg" />
+            </a>
+            <a href="#projects">
+                <i div id="projects"></i>
+                <img src="webpage/projects.jpg" />
+            </a>
+            <a href="blog">
+                <i div id="blog"></i>
+                <img src="webpage/blog.jpg" />
+            </a>
+        </div>
