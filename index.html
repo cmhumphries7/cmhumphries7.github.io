@@ -6,10 +6,12 @@
     <title>Chris Humphries Portfolio</title>
 
     <link rel="stylesheet" type="text/css" href="./style.css">
+    
 </head>
 
 <body>
     <div class="container">
+        <a name="homeLink" /></a>
         <header>
             <img src="webpage/headshot.jpg">
             <h1>Hello, I'm Chris Humphries.</h1>
@@ -52,7 +54,7 @@
                         <br> Git/Github
                         <br> Spring MVC
                     </div>
-                    
+
 
             </section>
 
@@ -142,26 +144,46 @@
 
         </main>
 
-        <nav id="mainNav">
-            <a href="#homeLink" class="active">Home</a>
-            <a href="#aboutLink">About</a>
-            <a href="#projectLink">Projects</a>
-            <a href="#interestsLink">Interests</a>
-            <a href="#contactLink">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="bars"></i>
-            </a>
-        </nav>
+        <div id="navContainer">
+            <div>
+                <nav id="mainNav">
+                    <div id="navHome">
+                        <a href="#homeLink" class="active">Home</a>
+                    </div>
+                    <div id="navAboutMe">
+                        <a href="#aboutLink">About</a>
+                    </div>
+                    <div id="navProjects">
+                        <a href="#projectLink">Projects</a>
+                    </div>
+                    <div id="navInterests">
+                        <a href="#interestsLink">Interests</a>
+                    </div>
+                    <div id="navContact">
+                        <a href="#contactLink">Contact</a>
+                    </div>
+
+                    <div id="navToggleContainer">
+                        <button id="navToggleButton">
+                            <img src="webpage/dropdown.png" alt="dropdown">
+                        </button>
+                    </div>
+            </div>
+            </nav>
+        </div>
+
 
         <footer>
 
             <p> &copy 2018 Christine Humphries </p>
+            
         </footer>
 
 
         </div>
 
-        <script src='script.js'></script>
+        <script src="java/jquery-3.3.1.js"></script>
+        <script src="java/script.js"></script>
 
 </body>
 

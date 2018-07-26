@@ -166,12 +166,8 @@ section > * {
     opacity: 1;
 }
 
-#projects article h3 {
-    top: -2em;
-    left: 3em;
-}
 
-/* #projects article h3,
+#projects article h3,
 #projects article span, 
 #projects article button {
     opacity: 0;
@@ -181,7 +177,18 @@ section > * {
 #projects article:hover h3, span, button {
     opacity: 1;
     color: white;
-   }
+}
+ #projects article:hover h3 {
+     padding-bottom: .5em;
+     }
+                
+#projects article:hover span {
+    padding-top: .5em;
+                    
+    } 
+ #projects article:hover button {
+    padding-top: .25em;
+    } 
 
 #projects * {
     transition: 0.5s;
@@ -189,7 +196,7 @@ section > * {
 
 #projects article:hover img {
     opacity: 0.3;
-} */
+} 
 
 
     
@@ -203,7 +210,7 @@ section > * {
     position: relative;
     max-width: 90vh;
     width: 80%;
-    margin-top: 3vh;
+    margin-top: 5vh;
     padding-top: 3rem;
 }
 
@@ -286,15 +293,20 @@ section > * {
     color:white;
 }
 
-#mainNav {
-    display: block;
-    background-image: url("webpage/sky.jpeg");
-    background-repeat: repeat-x;
-    overflow: hidden;
+#navContainer {
+    display: grid;
     position: fixed;
     top: 0;
     height: 10vh;
     width: 100%;
+    background-image: url("webpage/sky.jpeg");
+    background-repeat: repeat-x;
+    overflow: hidden;
+}
+
+#main-nav{
+    display: block;
+    justify-content: space-between;
 }
 
 #mainNav  a {
@@ -306,44 +318,24 @@ section > * {
     text-decoration: none;
     font-weight: bold;
     font-size: 17px;
+   
 }
 
-#mainNav::before:hover {
+#mainNav a:hover {
     background-color: #FDEE23;;
     color: black;
 }
 
-#mainNav.open::before {
-    content: 'HIDE MENU';
+ #navToggleContainer{
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    background-color: #000;
+    flex-direction: row-reverse;
+    
 }
 
-#mainNav.open a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3rem;
-    background: #000;
-}
-
-#mainNav ::selection {
-    color: inherit;
-    background: transparent;
-}
-
-/* 
-#mainNav  a:hover {
-    background-color: #FDEE23;;
-    color: black;
-}
-
-#mainNav  .icon {
-    display: none;
-} */
-
+#navToggleButton{
+    margin-right: 10px;
+    margin-top:10px;
+} 
 
 
 

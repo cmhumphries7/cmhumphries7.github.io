@@ -55,22 +55,17 @@
 
     function addNavEventListeners() {
 
-        const mainNav = document.querySelector('#mainNav');
+        let navToggleButton = document.getElementById('navToggleButton');
+        let mainNav = document.getElementById('mainNav');
 
-        const navClickHandler = function () {
-            this.classList.toggle('open');
-            event.stopPropagation();
-        };
-
-        mainNav.addEventListener('click', navClickHandler);
-
-        const bodyClickHandler = function () {
-            mainNav.classList.remove('open');
-        };
-
-        document.body.addEventListener('click', bodyClickHandler);
-
+        navToggleButton.addEventListener('click', function () {
+            if (mainNav.style.display === "none") {
+                $('#mainNav').slideDown();
+            } else {
+                $('#mainNav').slideUp();
+            };
+        });
     };
-  
 
-    })();
+
+})();
