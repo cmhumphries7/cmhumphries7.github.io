@@ -10,7 +10,7 @@
 
 <body>
     <div class="container">
-        <header id="homeLink">
+        <header>
             <img src="webpage/headshot.jpg">
             <h1>Hello, I'm Chris Humphries.</h1>
             <h1>I make full stack web apps and design games.</h1>
@@ -18,8 +18,8 @@
 
         <main>
 
+            <a name="aboutLink" /></a>
             <section id="aboutMe">
-                <a name="aboutLink" /></a>
                 <h2>About Me</h2>
                 <div id="aboutGrid">
                     <div id="bio">
@@ -52,66 +52,116 @@
                         <br> Git/Github
                         <br> Spring MVC
                     </div>
+                    
 
             </section>
+
+            <a name="projectLink" /></a>
             <section id="myProjects">
-                <a name="projectLink" /></a>
                 <h2>Projects</h2>
                 <div id="projects">
-                    <article class="project">
-                        <img src="webpage/animals.jpg">
+
+                    <article>
                         <h3>Virtual Pets Amok</h3>
+                        <img src="webpage/animals.jpg">
                         <span>Java</span>
                         <a href="https://github.com/cmhumphries7/virtual-pets-amok" target="_blank">
                             <button>Learn More</button>
                         </a>
-
                     </article>
-                    <article class="project">
-                        <img src="webpage/cats.jpeg">
+
+                    <article>
                         <h3>Virtual Pet Shelter</h3>
+                        <img src="webpage/cats.jpeg">
                         <span>Java</span>
                         <a href="https://github.com/cmhumphries7/virtual-pet-shelter" target="_blank">
                             <button>Learn More</button>
                         </a>
                     </article>
-                    <article class="project">
-                        <img src="webpage/dragon.png">
+
+                    <article>
                         <h3>Reviews Site</h3>
+                        <img src="webpage/dragon.png">
                         <span>HTML5</span>
                         <a href="https://github.com/cmhumphries7/reviews-site" target="_blank">
                             <button>Learn More</button>
                         </a>
                     </article>
+
                 </div>
             </section>
+
+            <a name="interestsLink" /></a>
+            <section id="interests">
+                <h2>Interests</h2>
+
+
+                <div class="carousel-container">
+                    <div id="carousel-frame"></div>
+
+
+                    <!-- wrapper for slides -->
+                    <div class="carouselImages">
+                        <img src="webpage/reading.jpg">
+
+                        <div class="text">Currently reading: The Haunting of Hill House
+                        </div>
+
+                    </div>
+
+                    <div class="carouselImages">
+                        <img src="webpage/playing.png">
+                        <div class="text">Currently playing: Life is Strange
+                        </div>
+                    </div>
+
+                    <div class="carouselImages">
+                        <img src="webpage/coding.png">
+                        <div class="text">Currently learning: Java, JavaScript, HTML5, and CSS
+                        </div>
+                    </div>
+
+                    <a id="carousel-prev">&#10094;</a>
+                    <a id="carousel-next">&#10095;</a>
+                </div>
+
+            </section>
+
+            <a name="contactLink" /></a>
             <section id="contacts">
                 <h2>Contact Me</h2>
-                <a name="contactLink" /></a>
                 <div id="contact">
                     Email: cmh@chrishumphries.net
-                    <br><br>
+                    <br>
+                    <br>
                     <a href="https://github.com/cmhumphries7">GitHub</a>
                     <br>
-                    <a href="https://www.linkedin.com/in/christine-humphries/">LindedIn</a>
+                    <a href="https://www.linkedin.com/in/christine-humphries/">LinkedIn</a>
                 </div>
             </section>
+
         </main>
-        <div class="topnav" id="myTopnav">
+
+        <nav id="mainNav">
             <a href="#homeLink" class="active">Home</a>
             <a href="#aboutLink">About</a>
             <a href="#projectLink">Projects</a>
+            <a href="#interestsLink">Interests</a>
             <a href="#contactLink">Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="bars"></i>
             </a>
-        </div>
+        </nav>
 
         <footer>
 
             <p> &copy 2018 Christine Humphries </p>
         </footer>
 
+
+        </div>
+
+        <script src='script.js'></script>
 
 </body>
 

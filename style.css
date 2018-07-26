@@ -33,48 +33,14 @@ header {
     justify-content: center;
     align-items: center;
 }
-.topnav {
-    background-image: url("webpage/sky.jpeg");
-    background-repeat: repeat-x;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    height: 10vh;
-    width: 100%;
-}
-
-.topnav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    background-color: #FDEE23;;
-    color: black;
-}
-
-/* .active {
-    background-color: #FDEE23;;
-    color: white;
-} */
-
-.topnav .icon {
-    display: none;
-}
 
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
-      float: right;
-      display: block;
+        float: right;
+        display: block;
     }
-  }
+}
 
 @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
@@ -89,7 +55,7 @@ header {
       text-align: left;
     }
 
-  }
+}
 
 
 h1 {
@@ -100,18 +66,19 @@ h1 {
 
 
  h2 {
-    background:#E90387;
+     background:#E90387;
     color: white;
     font-family: url(/fonts/PressStart2P.ttf);
     height: 5rem;
     width: 100vw;
     margin: 2rem auto;
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
     text-align: center;
 }
 
 h3 {
     text-align: center;
+    color: #000;
 }
 
 .main {
@@ -119,13 +86,13 @@ h3 {
 }
 
 main section:nth-child(odd) {
-	background-image: url("webpage/sky.jpeg");
+    background-image: url("webpage/sky.jpeg");
     background-repeat: repeat-x;
     overflow: hidden;
 }
 
 main section:nth-child(even) {
-	background: #ddd;
+    background: #ddd;
 }
 
 section {
@@ -136,8 +103,7 @@ section {
     font-size: 1.5rem;
 }
 
-section> * {
-    margin: 1em auto;
+section > * {
     width: 90%;
 	margin: 0 auto;
 }
@@ -171,81 +137,158 @@ section> * {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+}  
+
 #projects {
     display:grid;
-	grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 1em;
-    margin: 3vh 0;
-}
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 2em;
+    margin-top: 4em;
 
-.project span {
-	display: block;
-}
-
-.project {
-    color:white;
-    text-align: center;
-    padding: 1em;
     position: relative;
-    height: 50vh;
-    
+    text-align: center;
+}
+
+#projects article {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    
-    overflow: hidden; 
-    
-}
-    
-    
-.project h3,
-.project span, 
-.project button {
-	position: absolute;
-	opacity: 0;
+    background: #009085;
+    padding: 1em;
 } 
 
-
-.project * {
-    transition: 0.5s;
-}
-
-.project img {
-    position: absolute;
-    height: 400px;
+#projects article img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border: 2px solid #333;
     opacity: 1;
 }
 
-.project h3 {
+#projects article h3 {
     top: -2em;
+    left: 3em;
 }
 
-.project span {
-    top: 0;
+/* #projects article h3,
+#projects article span, 
+#projects article button {
+    opacity: 0;
+    
+}  
+
+#projects article:hover h3, span, button {
+    opacity: 1;
+    color: white;
+   }
+
+#projects * {
+    transition: 0.5s;
 }
 
-.project buttom {
-    bottom: -2em;
+#projects article:hover img {
+    opacity: 0.3;
 }
-.project:hover img {
-    opacity: 0.2;
+
+#project article:hover h3 {
+    position: absolute;
+    left:50%;
+    top: -2em;
+
+
+}*/
+    
+
+/* #projects button {
+    display: inline-block;
+}
+
+    
+
+
+
+
+#projects article h3, span, button {
+   text-align: center;
 }
 
 
-.project:hover h3 {
-    top: 1em;
-	opacity: 1;
+
+#projects article:hover img {
+     opacity: 0.3;
+ }
+ 
+#projects article:hover h3, span, button {
+     opacity: 1;
+     color: white;
+    } */
+
+
+    
+#interests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.project:hover span {
-    top: 3em;
-	opacity: 1;
+
+.carousel-container {
+    position: relative;
+    max-width: 90vh;
+    width: 80%;
+    margin-top: 3vh;
+    padding-top: 3rem;
 }
-.project:hover button {
-    bottom: 1em;
-	opacity: 1;
+
+.carousel-container img {
+    width: 100%;
+    height: 25rem;
+    object-fit: fill;
 }
+
+.carouselImages {
+    display: none;
+}
+
+#carousel-prev, #carousel-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: whitesmoke;
+    background-color: rgba(137, 140, 141, 0.3);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    
+}
+
+#carousel-prev {
+    left: 0;
+    border-radius: 0 1.8vh 1.8vh 0;
+}
+
+#carousel-next {
+    right: 0;
+    border-radius: 1.8vh 0 0 1.8vh;
+}
+
+#carousel-prev:hover, #carousel-next:hover {
+    background-color: #5BE5C6;
+}
+
+.text {
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000, -2px -2px 4px #000;
+}
+
 
 
 #contact {
@@ -269,12 +312,70 @@ section> * {
     
     overflow: hidden; 
 }
-    
+
 
 
 #contact a {
     color:white;
 }
+
+#mainNav {
+    display: block;
+    background-image: url("webpage/sky.jpeg");
+    background-repeat: repeat-x;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+}
+
+#mainNav  a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#mainNav::before:hover {
+    background-color: #FDEE23;;
+    color: black;
+}
+
+#mainNav.open::before {
+    content: 'HIDE MENU';
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #000;
+}
+
+#mainNav.open a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background: #000;
+}
+
+#mainNav ::selection {
+    color: inherit;
+    background: transparent;
+}
+
+/* 
+#mainNav  a:hover {
+    background-color: #FDEE23;;
+    color: black;
+}
+
+#mainNav  .icon {
+    display: none;
+} */
 
 
 
