@@ -189,40 +189,7 @@ section > * {
 
 #projects article:hover img {
     opacity: 0.3;
-}
-
-#project article:hover h3 {
-    position: absolute;
-    left:50%;
-    top: -2em;
-
-
-}*/
-    
-
-/* #projects button {
-    display: inline-block;
-}
-
-    
-
-
-
-
-#projects article h3, span, button {
-   text-align: center;
-}
-
-
-
-#projects article:hover img {
-     opacity: 0.3;
- }
- 
-#projects article:hover h3, span, button {
-     opacity: 1;
-     color: white;
-    } */
+} */
 
 
     
