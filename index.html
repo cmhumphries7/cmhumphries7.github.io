@@ -7,12 +7,12 @@
 
     <link rel="stylesheet" type="text/css" href="./style.css">
 
+
 </head>
 
 <body>
     <div class="container">
-        <a name="homeLink" /></a>
-        <header>
+        <header id="home">
             <img src="webpage/headshot.jpg">
             <h1>Hello, I'm Chris Humphries.</h1>
             <h1>I make full stack web apps and design games.</h1>
@@ -20,80 +20,150 @@
 
         <main>
 
-            <a name="aboutLink" /></a>
-            <section id="aboutMe">
+            <section id="aboutMeSection">
                 <h2>About Me</h2>
-                <div id="aboutGrid">
+                <div id="aboutMeGrid">
                     <div id="bio">
                         <h3>Developer - Chris Humphries</h3>
-                        <br> Hi! I am an aspiring video game developer looking to apply my unique background in psychology, data
-                        analysis, research, and software development. Currently, I am seeking a position in the gaming industry.
-                        I am willing to relocate for the right fit.
-
                         <br>
-                        <br> As a life-long lover of learning, I'm constantly looking to expand my skill set. This lead me to
-                        enroll in We Can Code IT, an intensive software development bootcamp where I learned from expert
-                        instructors and intensive hands-on projects. I planned designed, and developed professionally programmed
-                        applications in collaborative team-based and independent settings, and demonstrated the proficiency
-                        to earn Software Development Certificate.
+                        <p> Hi! I am an aspiring video game developer looking to apply my unique background in psychology, data
+                            analysis, research, and software development. Currently, I am seeking a position in the gaming
+                            industry. I am willing to relocate for the right fit.
 
+                        </p>
+                        <p> As a life-long lover of learning, I'm constantly looking to expand my skill set. This lead me to
+                            enroll in We Can Code IT, an intensive software development bootcamp where I learned from expert
+                            instructors and intensive hands-on projects. I planned designed, and developed professionally
+                            programmed applications in collaborative team-based and independent settings, and demonstrated
+                            the proficiency to earn Software Development Certificate.
+                        </p>
                     </div>
+
+
+
+
                     <div id="currentSkills">
-                        <h3>Skill Inventory</h3>
+                        <div id="skills">
+                            <h3>Skill Inventory</h3>
 
-                        <br>
-                        <br>
-                        <br> Java
-                        <br> HTML5
-                        <br> CSS3
-                        <br> Flexbox
-                        <br> JavaScript
-                        <br> Test-Driven Development
-                        <br> Pair Programming
-                        <br> Agile Methodology/Scrum
-                        <br> Git/Github
-                        <br> Spring MVC
+
+                            <ul>
+                                <li> Java</li>
+                                <li> HTML5</li>
+                                <li> CSS3</li>
+                                <li> Flexbox</li>
+                                <li> JavaScript</li>
+                                <li>Test-Driven Development</li>
+                                <li>Pair Programming</li>
+                                <li>Agile Methodology/Scrum</li>
+                                <li>Git/Github</li>
+                                <li>Spring MVC</li>
+
+                            </ul>
+
+                        </div>
                     </div>
+                </div>
 
-
+                <!-- add model -->
+                <div id="learnMoreButton">
+                    <div id="modal-trigger">
+                        <span>LEARN MORE</span>
+                    </div>
+                </div>
             </section>
 
-            <a name="projectLink" /></a>
+
             <section id="myProjects">
                 <h2>Projects</h2>
                 <div id="projects">
 
-                    <article>
+                    <article id="fortune">
+                        <h3>Fortune Teller</h3>
+                        <img src="webpage/future.jpg">
+                        <button id="modalBtn" class="button">Learn More</button>
+                        <div id="simpleModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="closeBtn">&times;</span>
+                                    <h3>Fortune Teller Project</h3>
+                                </div>
+                                <div class="modal-body">
+
+                                    <p>A console application that predicts the user's future depending on user input.
+                                    </p>
+                                    <p>Techology Used:</p>
+
+                                    <p>Java</p>
+                                    <a href="https://github.com/cmhumphries7/FortuneTeller">View on GitHub</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="petsAmok">
                         <h3>Virtual Pets Amok</h3>
-                        <img src="webpage/animals.jpg">
-                        <span>Java</span>
-                        <a href="https://github.com/cmhumphries7/virtual-pets-amok" target="_blank">
-                            <button>Learn More</button>
-                        </a>
+                        <img src="webpage/amok.jpeg">
+                        <button id="modalBtn2" class="button">Learn More</button>
+                        <div id="simpleModal2" class="modal2">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="closeBtn2">&times;</span>
+                                    <h3>Virtual Pets Amok</h3>
+                                </div>
+                                <div class="modal-body">
+
+                                    <p>Develop a console application that allows a user to admit and adopt virtual pets, take
+                                        care of pet needs, and implements a game tick function.</p>
+                                    <p>Techology Used:</p>
+
+                                    <p>Java</p>
+
+                                    <a href="https://github.com/cmhumphries7/virtual-pets-amok">View on GitHub
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </article>
 
-                    <article>
-                        <h3>Virtual Pet Shelter</h3>
-                        <img src="webpage/cats.jpeg">
-                        <span>Java</span>
-                        <a href="https://github.com/cmhumphries7/virtual-pet-shelter" target="_blank">
-                            <button>Learn More</button>
-                        </a>
-                    </article>
-
-                    <article>
-                        <h3>Reviews Site</h3>
+                    <article id="fullStack">
+                        <h3>Full-stack Reviews Site</h3>
                         <img src="webpage/dragon.png">
-                        <span>HTML5</span>
-                        <a href="https://github.com/cmhumphries7/reviews-site" target="_blank">
-                            <button>Learn More</button>
-                        </a>
+                        <button id="modalBtn3" class="button">Learn More</button>
+                        <div id="simpleModal3" class="modal3">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="closeBtn3">&times;</span>
+                                    <h3>Full-stack Reviews Site</h3>
+                                </div>
+                                <div class="modal-body">
+
+                                    <p>A video game review sites that provides reviews for various categories of games.
+                                    </p>
+                                    <p>Techology Used:</p>
+                                    <p>Java</p>
+                                    <p>Spring MVC</p>
+                                    <p>JPA</p>
+                                    <p>Thymeleaf</p>
+                                    <p>HTML</p>
+                                    <p>CSS/Flexbox/Grid</p>
+
+                                    <a href="https://github.com/cmhumphries7/full-stack-reviews-site">View on GitHub</a>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </article>
 
                 </div>
             </section>
 
-            <a name="interestsLink" /></a>
+
             <section id="interests">
                 <h2>Interests</h2>
 
@@ -129,7 +199,7 @@
 
             </section>
 
-            <a name="contactLink" /></a>
+
             <section id="contacts">
                 <h2>Contact Me</h2>
                 <div id="contact">
@@ -148,19 +218,19 @@
             <div>
                 <nav id="mainNav">
                     <div id="navHome">
-                        <a href="#homeLink" class="active">Home</a>
+                        <a href="#home" class="active">Home</a>
                     </div>
                     <div id="navAboutMe">
-                        <a href="#aboutLink">About</a>
+                        <a href="#aboutMeSection">About</a>
                     </div>
                     <div id="navProjects">
-                        <a href="#projectLink">Projects</a>
+                        <a href="#myProjects">Projects</a>
                     </div>
                     <div id="navInterests">
-                        <a href="#interestsLink">Interests</a>
+                        <a href="#interests">Interests</a>
                     </div>
                     <div id="navContact">
-                        <a href="#contactLink">Contact</a>
+                        <a href="#contacts">Contact</a>
                     </div>
 
                 </nav>
@@ -178,12 +248,30 @@
             <p> &copy 2018 Christine Humphries </p>
 
         </footer>
-
-
+        <div id="backdrop">
+            <div id="modal">
+                <div id="modalTitle">
+                    <h4>Work Experience</h4>
+                    <a>Close</a>
+                </div>
+                <div id="modal-content">
+                    <p id="modalContent1">Highly motivated software developer, specializing in video game design. Fully trained within an Agile
+                        project framework, practical experience of coding in a full-stack environment, web design, and test-driven
+                        development. Graduate of We Can Code IT, an intensive software development bootcamp.
+                    </p>
+                    <p id="modalContent2">Previously employed as an Anti-Money Laundering Investigator, requiring strong analytical skills, implementing
+                        creative problem solving - often to technical challenges - and collaborating across various teams
+                        and departments to produce timely, well-researched risk analyses. </p>
+                </div>
+            </div>
         </div>
 
-        <script src="java/jquery-3.3.1.js"></script>
-        <script src="java/script.js"></script>
+
+
+    </div>
+
+    <script src="java/jquery-3.3.1.js"></script>
+    <script src="java/script.js"></script>
 
 </body>
 
